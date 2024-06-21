@@ -196,6 +196,7 @@ const OptionsContainer = styled.div`
     }
     @media (max-width: 430px) {
       ul {
+        justify-content: flex-start;
         li {
           p {
             font-size: 0.9em;
