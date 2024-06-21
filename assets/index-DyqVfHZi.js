@@ -1661,6 +1661,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     align-items: center;
     justify-content: flex-start;
     padding: 1.2rem;
+    padding-top: 3rem;
     margin-bottom: 1rem;
     & > * {
     flex: 0 0 auto; 
