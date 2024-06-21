@@ -68,8 +68,12 @@ const Chart = ({chartData, specifier} ) => {
   };
 
   return (
+    
     <ChartContainer >
-      <Line data={data} options={options}/>
+    {chartData&&specifier&&(
+       <Line data={data} options={options}/>
+    )}
+     
     </ChartContainer>
   );
 }

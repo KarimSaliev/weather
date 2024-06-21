@@ -151,7 +151,7 @@ const OptionsContainer = styled.div`
     border-radius: 0 0 30px 30px;
     transition: 0.5s ease-in-out;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 0.5rem;
     opacity: 0;

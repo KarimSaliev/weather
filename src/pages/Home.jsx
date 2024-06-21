@@ -164,6 +164,7 @@ const UpperContainer = styled.div`
   @media (max-width: 700px) {
     flex-direction: column;
     overflow-y: auto;
+    overflow-x: hidden;
     align-items: center;
 
     padding-top: 0;
