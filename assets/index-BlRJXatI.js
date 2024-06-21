@@ -937,7 +937,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   @media (max-width: 800px) {
     width: 100%;
-    border-radius: 0;
+    border-radius: 15px 15px 0 0;
   }
   justify-content: space-between;
   p {
@@ -1000,8 +1000,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   align-items: center;
   width: 100%;
   overflow-x: auto;
-  justify-content: center;
+  justify-content: flex-start;
   ul {
+    height: 100%;
     display: flex;
     list-style: none;
     padding-left: 0;
@@ -1082,6 +1083,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
   }
   @media (max-width: 530px) {
+
     li {
       height: 80px;
       width: 80px;
@@ -1144,16 +1146,15 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
   border-radius: 30px;
   margin-right: 1rem;
   padding: 1rem;
+  overflow-y: auto;
   @media(max-width: 700px) {
+    height: 500px;
     width: 100%;
     margin-right: 0;
-    height: 85%;
   }
   @media (max-width:500px) {
-    height: 80%;
     padding: 0.3rem;
-  }
-`;function JO({sendChartSpecifier:e}){const[t,n]=z.useState("temp"),i=r=>{e(r),n(r)};return z.useEffect(()=>{t&&e(t)},[t]),C.jsx(eE,{children:C.jsxs("ul",{children:[C.jsx("li",{onClick:()=>{i("temp")},className:t==="temp"?"active":"",children:C.jsx("h3",{children:"Temperature Chart"})}),C.jsx("li",{onClick:()=>{i("cloud")},className:t==="cloud"?"active":"",children:C.jsx("h3",{children:"Cloud Chart"})}),C.jsx("li",{onClick:()=>{i("snow_depth")},className:t==="snow_depth"?"active":"",children:C.jsx("h3",{children:"Snow Depth"})}),C.jsx("li",{onClick:()=>{i("pressure")},className:t==="pressure"?"active":"",children:C.jsx("h3",{children:"Pressure"})}),C.jsx("li",{onClick:()=>{i("snowfall")},className:t==="snowfall"?"active":"",children:C.jsx("h3",{children:"Snowfall"})}),C.jsx("li",{onClick:()=>{i("wind_direction")},className:t==="wind_direction"?"active":"",children:C.jsx("h3",{children:"Wind direction"})}),C.jsx("li",{onClick:()=>{i("rain")},className:t==="rain"?"active":"",children:C.jsx("h3",{children:"Rain"})}),C.jsx("li",{onClick:()=>{i("wind")},className:t==="wind"?"active":"",children:C.jsx("h3",{children:"Wind"})}),C.jsx("li",{onClick:()=>{i("visibility")},className:t==="visibility"?"active":"",children:C.jsx("h3",{children:"Visibility"})})]})})}const eE=ue.div`
+  }`;function JO({sendChartSpecifier:e}){const[t,n]=z.useState("temp"),i=r=>{e(r),n(r)};return z.useEffect(()=>{t&&e(t)},[t]),C.jsx(eE,{children:C.jsxs("ul",{children:[C.jsx("li",{onClick:()=>{i("temp")},className:t==="temp"?"active":"",children:C.jsx("h3",{children:"Temperature Chart"})}),C.jsx("li",{onClick:()=>{i("cloud")},className:t==="cloud"?"active":"",children:C.jsx("h3",{children:"Cloud Chart"})}),C.jsx("li",{onClick:()=>{i("snow_depth")},className:t==="snow_depth"?"active":"",children:C.jsx("h3",{children:"Snow Depth"})}),C.jsx("li",{onClick:()=>{i("pressure")},className:t==="pressure"?"active":"",children:C.jsx("h3",{children:"Pressure"})}),C.jsx("li",{onClick:()=>{i("snowfall")},className:t==="snowfall"?"active":"",children:C.jsx("h3",{children:"Snowfall"})}),C.jsx("li",{onClick:()=>{i("wind_direction")},className:t==="wind_direction"?"active":"",children:C.jsx("h3",{children:"Wind direction"})}),C.jsx("li",{onClick:()=>{i("rain")},className:t==="rain"?"active":"",children:C.jsx("h3",{children:"Rain"})}),C.jsx("li",{onClick:()=>{i("wind")},className:t==="wind"?"active":"",children:C.jsx("h3",{children:"Wind"})}),C.jsx("li",{onClick:()=>{i("visibility")},className:t==="visibility"?"active":"",children:C.jsx("h3",{children:"Visibility"})})]})})}const eE=ue.div`
     height: 100%;
     width: 30%;
     background: linear-gradient(135deg, rgba(83, 66, 167, 255), rgba(138, 113, 164, 255));
@@ -1289,7 +1290,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
   }
   @media (max-width: 800px) {
     width: 100%;
-    border-radius: 0;
+    border-radius: 15px 15px 0 0;
 
   }
   
@@ -1399,6 +1400,9 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     }
     &.active {
       transform: translateY(-44%);
+    }
+    @media (max-width: 430px) {
+      width: 300px;
     }
 
 `,lE=ue.div`
@@ -1622,7 +1626,6 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
   border-radius: 30px;
   margin-bottom: 1.5rem;
   padding: 1rem;
-  overflow: hidden;
   &.shut {
     opacity: 0;
   }
@@ -1630,6 +1633,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     flex-direction: column;
     overflow-y: auto;
     align-items: center;
+
     padding-top: 0;
     margin-bottom: 1rem;
     & > * {
@@ -1639,6 +1643,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
  
  `,gE=ue.div`
   display: flex;
+  align-items: center;
   width: 100%;
   height: 200px;
   background: linear-gradient(rgba(68,55,119,255),rgba(97,82,151,255));
@@ -1743,15 +1748,15 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 100vh;
   width: 100%;
+  padding: 0 2rem 0 2rem;
   * {
     z-index: 1;
   }
-  padding: 8rem 2rem 5rem 2rem;
   h2 {
     font-size: 4em;
     color: white;
+    margin: 5rem 0 3rem 0;
   }
   h3 {
     color: white;
@@ -1790,6 +1795,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     }
   }
   @media(max-width: 400px) {
+    
     h2 {
       font-size: 2.6em;
     }
@@ -1797,6 +1803,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
       font-size: 1.2em;
     }
   }
+
 
 `;function Ar({pos:e,inViewPort:t,img:n,person:i}){const r=QO(i),s=z.useRef(null);function o(){s.current.classList.add("active")}function a(){s.current.classList.remove("active")}return C.jsxs(kE,{ref:s,style:{transform:t?"translateX(0)":e==="left"?"translateX(-200%)":"translateX(200%)",justifyContent:e==="left"?"flex-start":"flex-end",padding:e==="left"?"0 0 0 1rem":"0 1rem 0 0"},onMouseOver:o,onMouseOut:a,children:[C.jsx(SE,{style:{left:e==="left"?"0":"",right:e==="right"?"0":"",borderRadius:e==="left"?"0 0 30px 0":"0 0 0 30px"},children:C.jsx("span",{children:i})}),C.jsx("img",{src:n,alt:"",style:{right:e==="left"?"0":"",left:e==="right"?"0":""}}),C.jsx("h4",{children:r})]})}const kE=ue.div`
     transition: 1s ease-in-out;
@@ -1870,7 +1877,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
         span {
             font-size: 0.8em;
         }
-    }`;function CE(){const e=u=>{const[c,d]=z.useState(!1),p=z.useRef(null);return z.useEffect(()=>(p.current=new IntersectionObserver(([m])=>{d(m.isIntersecting)},{threshold:1}),u.current&&p.current.observe(u.current),()=>{p.current&&u.current&&p.current.unobserve(u.current)}),[u]),c},t=z.useRef(null),n=e(t),i=z.useRef(null),r=e(i),s=z.useRef(null),o=e(s),a=z.useRef(null);return z.useEffect(()=>{const u=new $u(a.current,{strings:["Get to know our team"],typeSpeed:10,cursorChar:""});return()=>{u.destroy()}},[]),C.jsxs(ME,{children:[C.jsx("h2",{ref:a}),C.jsxs(Rf,{ref:t,children:[C.jsx(Ar,{pos:"left",inViewPort:n,img:"https://github.com/KarimSaliev/weather/blob/main/src/assets/karim.png?raw=true",person:"Karim Saliev"}),C.jsx(Ar,{pos:"right",inViewPort:n,img:"https://github.com/KarimSaliev/weather/blob/main/src/assets/nazar.png?raw=true",person:"Nazar Zhanabergenov"})]}),C.jsxs(Rf,{ref:i,children:[C.jsx(Ar,{pos:"left",inViewPort:r,img:"https://github.com/KarimSaliev/weather/blob/main/src/assets/ravshan.png?raw=true",person:"Ravshanbek Musaev"}),C.jsx(Ar,{pos:"right",inViewPort:r,img:"https://github.com/KarimSaliev/weather/blob/main/src/assets/kateryna.png?raw=true",person:"Kateryna Sadovska"})]}),C.jsxs(Rf,{ref:s,children:[C.jsx(Ar,{pos:"left",inViewPort:o,img:"src/assets/ebube.png",person:"ebube"}),C.jsx(Ar,{pos:"right",inViewPort:o,img:"/src/assets/khushnud.png",person:"khushnud"})]})]})}const ME=ue.div`
+    }`;function CE(){const e=u=>{const[c,d]=z.useState(!1),p=z.useRef(null);return z.useEffect(()=>(p.current=new IntersectionObserver(([m])=>{d(m.isIntersecting)},{threshold:[0,.25,.5,.75,1]}),u.current&&p.current.observe(u.current),()=>{p.current&&u.current&&p.current.unobserve(u.current)}),[u]),c},t=z.useRef(null),n=e(t),i=z.useRef(null),r=e(i),s=z.useRef(null),o=e(s),a=z.useRef(null);return z.useEffect(()=>{const u=new $u(a.current,{strings:["Get to know our team"],typeSpeed:10,cursorChar:""});return()=>{u.destroy()}},[]),C.jsxs(ME,{children:[C.jsx("h2",{ref:a}),C.jsxs(Rf,{ref:t,children:[C.jsx(Ar,{pos:"left",inViewPort:n,img:"https://github.com/KarimSaliev/weather/blob/main/src/assets/karim.png?raw=true",person:"Karim Saliev"}),C.jsx(Ar,{pos:"right",inViewPort:n,img:"https://github.com/KarimSaliev/weather/blob/main/src/assets/nazar.png?raw=true",person:"Nazar Zhanabergenov"})]}),C.jsxs(Rf,{ref:i,children:[C.jsx(Ar,{pos:"left",inViewPort:r,img:"https://github.com/KarimSaliev/weather/blob/main/src/assets/ravshan.png?raw=true",person:"Ravshanbek Musaev"}),C.jsx(Ar,{pos:"right",inViewPort:r,img:"https://github.com/KarimSaliev/weather/blob/main/src/assets/kateryna.png?raw=true",person:"Kateryna Sadovska"})]}),C.jsxs(Rf,{ref:s,children:[C.jsx(Ar,{pos:"left",inViewPort:o,img:"src/assets/ebube.png",person:"ebube"}),C.jsx(Ar,{pos:"right",inViewPort:o,img:"/src/assets/khushnud.png",person:"khushnud"})]})]})}const ME=ue.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2013,7 +2020,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
      position: absolute;
      width: 100px;
      object-fit: cover;
-     margin-left: 2rem;
+     left: 20px;
      &:hover {
         cursor: pointer;
 
@@ -2067,10 +2074,10 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     }
     `,AE=ue.div`
     z-index: 1000%;
-    font-size: 2em;
+    font-size: 2.5em;
     position: absolute;
-    bottom: 20%;
-    right: 2%;
+    right: 20px;
+    bottom: 20px;
     opacity: 0;
     @media(max-width: 1200px) {
         opacity: 1;
