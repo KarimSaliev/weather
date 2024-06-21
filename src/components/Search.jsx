@@ -149,6 +149,9 @@ const ButtonContainer = styled.div`
         cursor: pointer;
       }
     }
+    @media (max-width: 430px) {
+      bottom: -55%;
+    }
 `
 const OptionsContainer = styled.div`
     width: 80%;
@@ -160,7 +163,7 @@ const OptionsContainer = styled.div`
     border-radius: 0 0 30px 30px;
     transition: 0.5s ease-in-out;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 0.5rem;
     opacity: 0;
@@ -192,7 +195,15 @@ const OptionsContainer = styled.div`
       opacity: 1;
     }
     @media (max-width: 430px) {
-      padding-top: 1rem;
+      ul {
+        width: 100%;
+        height: 100%;
+        li {
+          p {
+            font-size: 0.9em;
+          }
+        }
+      }
     }
     
 `
