@@ -97,7 +97,7 @@ function Home() {
 
       <Search sendDataByCity={receiveDataByCity}/>
       <LoadingContainer className={loadingScreen?'active': ''}>
-         <img src="/src/assets/loading.png" alt="" />
+         <img src="https://github.com/KarimSaliev/weather/blob/main/src/assets/loading.png?raw=true" alt="" />
        </LoadingContainer>
       <UpperContainer className={loadingScreen? 'shut': ''}>
       

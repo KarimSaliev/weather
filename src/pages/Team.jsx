@@ -51,16 +51,16 @@ function Team() {
         <h2 ref={header}></h2>
         <Row ref={row1}>
             
-            <TeamMember pos = {'left'} inViewPort={isInViewPort1} img ={'/src/assets/karim.png'} person='Karim Saliev'/>
+            <TeamMember pos = {'left'} inViewPort={isInViewPort1} img ={'https://github.com/KarimSaliev/weather/blob/main/src/assets/karim.png?raw=true'} person='Karim Saliev'/>
             
-            <TeamMember pos = {'right'} inViewPort={isInViewPort1} img={'/src/assets/nazar.png'} person='Nazar Zhanabergenov'/>
+            <TeamMember pos = {'right'} inViewPort={isInViewPort1} img={'https://github.com/KarimSaliev/weather/blob/main/src/assets/nazar.png?raw=true'} person='Nazar Zhanabergenov'/>
             
         </Row>
         <Row ref={row2}>
             
-            <TeamMember pos = {'left'} inViewPort={isInViewPort2} img={'src/assets/ravshan.png'} person='Ravshanbek Musaev'/>
+            <TeamMember pos = {'left'} inViewPort={isInViewPort2} img={'https://github.com/KarimSaliev/weather/blob/main/src/assets/ravshan.png?raw=true'} person='Ravshanbek Musaev'/>
             
-            <TeamMember pos = {'right'} inViewPort={isInViewPort2} img={'src/assets/kateryna.png'} person='Kateryna Sadovska'/>
+            <TeamMember pos = {'right'} inViewPort={isInViewPort2} img={'https://github.com/KarimSaliev/weather/blob/main/src/assets/kateryna.png?raw=true'} person='Kateryna Sadovska'/>
             
         </Row>
         <Row ref={row3}>

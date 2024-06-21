@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <NavbarContainer>
         <SNavLink to='/'>
-        <img src="/src/assets/logo.png" alt=""/>
+        <img src="https://github.com/KarimSaliev/weather/blob/main/src/assets/logo.png?raw=true" alt=""/>
         </SNavLink>
        
    
