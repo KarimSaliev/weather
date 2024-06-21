@@ -18,7 +18,7 @@ function Search({sendDataByCity}) {
   }
   const fetchDataByCity = async(name)=>{
     try {
-      const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=10&appid=${apiKey}`)
+      const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=10&appid=${apiKey}`)
       if (!response.ok) {
         throw new Error(response);
       }
