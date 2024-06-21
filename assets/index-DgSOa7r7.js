@@ -894,7 +894,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
   }
   @media (max-width:700px) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     margin-right: 0;
     width: 100%;
   }
@@ -905,7 +905,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   width: 210px;
   border-radius: 0 0 30px 0;
   background-color: rgba(68,55,119,255);
-  border-radius: 0 0 15px;
+  border-bottom-right-radius: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   color: white;
   position: absolute;
@@ -1263,7 +1263,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
    
     `,iE=ue.div`
   background-color: rgba(68,55,119,255);
-  border-radius: 0 0 15px;
+  border-bottom-right-radius: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   width: 80%;
   height: 50px;
@@ -1273,7 +1273,6 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
   left: 0;
   display: flex;
   align-items: center;
-  border-bottom-right-radius: 30px;
   h2 {
     color: white;
     font-size: 1.2em;
@@ -1577,7 +1576,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     }
     @media(max-width: 700px) {
       width: 100%;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
       margin-right: 0;
       img {
         width: 50%;
@@ -1596,7 +1595,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     left: 0;
     display: flex;
     align-items: center;
-    border-bottom-right-radius: 30px;
+    border-bottom-right-radius: 15px;
     h2 {
       font-size: 1.2em;
       margin: 0.5rem 0 0.5rem 1rem;
@@ -1658,7 +1657,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     overflow-x: hidden;
     align-items: center;
     padding-top: 0;
-    padding: 1.5rem;
+    padding: 1.2rem;
     margin-bottom: 1rem;
     & > * {
     flex: 0 0 auto; 
