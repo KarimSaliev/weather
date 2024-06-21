@@ -1479,6 +1479,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     }
     @media (max-width: 430px) {
       ul {
+        justify-content: flex-start;
         li {
           p {
             font-size: 0.9em;
