@@ -1433,6 +1433,9 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
         cursor: pointer;
       }
     }
+    @media (max-width: 430px) {
+      bottom: -55%;
+    }
 `,uE=ue.div`
     width: 80%;
     height: 200px;
@@ -1443,7 +1446,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     border-radius: 0 0 30px 30px;
     transition: 0.5s ease-in-out;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 0.5rem;
     opacity: 0;
@@ -1475,7 +1478,15 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
       opacity: 1;
     }
     @media (max-width: 430px) {
-      padding-top: 1rem;
+      ul {
+        width: 100%;
+        height: 100%;
+        li {
+          p {
+            font-size: 0.9em;
+          }
+        }
+      }
     }
     
 `;function cE({geoData:e}){const[t,n]=z.useState(null);z.useEffect(()=>{e&&i(e[0],e[1])},[e]);const i=async(s,o)=>{try{const u=await(await fetch(`https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&latitude=${s}&longitude=${o}&maxradiuskm=100`)).json();r(u)}catch(a){throw new Error(a)}},r=s=>{const o=s.features.map(a=>{const{mag:u,place:c,time:d,cdi:p,tsunami:m}=a.properties,[y,_,S]=a.geometry.coordinates,b=new Date(d);return{location:c,mag:u,date:b.toString().slice(0,15),lat:_,lon:y,depth:S,cdi:p,tsunami:m?"Yes":"No"}});n(o)};return C.jsxs(fE,{children:[C.jsx("img",{src:"https://i.gifer.com/o8G.gif",alt:""}),C.jsx(dE,{children:C.jsx("h2",{children:"Recent Earthquake Updates"})}),t&&C.jsxs(C.Fragment,{children:[t.length==0&&C.jsx("h1",{children:"No data found"}),t.length>=1&&C.jsx("ul",{children:t.map((s,o)=>C.jsxs("li",{children:[C.jsx("h2",{children:s.location}),C.jsx("p",{children:s.date}),C.jsxs("span",{children:["Latitude: ",s.lat]}),C.jsxs("span",{children:["Longitude: ",s.lon]}),C.jsxs("span",{children:["Depth: ",s.depth]}),C.jsxs("span",{children:["CDI: ",s.cdi]}),C.jsxs("span",{children:["Chance of Tsunami: ",s.tsunami]}),C.jsx("hr",{})]},o))})]})]})}const fE=ue.div`
