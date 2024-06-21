@@ -107,7 +107,6 @@ const MainWeatherContainer = styled.div`
   padding-left: 2rem;
   color: white;
   margin-right: 1rem;
-  overflow: hidden;
   i {
     position: absolute;
     right: 10%;
@@ -156,7 +155,6 @@ const MainWeatherContainer = styled.div`
 const CityData = styled.div`
   height: 50px;
   width: 210px;
-  border-radius: 0 0 30px 0;
   background-color: rgba(68,55,119,255);
   border-bottom-right-radius: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

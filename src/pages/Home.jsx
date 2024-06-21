@@ -168,7 +168,6 @@ const UpperContainer = styled.div`
     align-items: center;
     justify-content: flex-start;
     padding: 1.2rem;
-    padding-top: 3rem;
     margin-bottom: 1rem;
     & > * {
     flex: 0 0 auto; 

@@ -186,7 +186,6 @@ const EQContainer = styled.div`
 
 const Header = styled.div`
     background-color: rgba(68,55,119,255);
-    border-radius: 0 0 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     width: 80%;
     height: 50px;
