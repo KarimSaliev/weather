@@ -894,7 +894,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
   }
   @media (max-width:700px) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
     width: 100%;
   }
  
@@ -930,7 +931,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
  
   @media (max-width: 800px) {
     width: 100%;
-    border-radius: 15px 15px 0 0;
+    border-radius: 0;
   }
   @media (max-width: 750px) {
     span {
@@ -1251,7 +1252,6 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     position: relative;
     width: 30%;
     height: 100%;
-    background-color: #4a4949;
     border-radius: 30px;
     background-image: url('https://images.unsplash.com/photo-1529958986175-1cacd1317691?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWlyfGVufDB8fDB8fHww');
     background-size: cover;
@@ -1290,7 +1290,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
   }
   @media (max-width: 800px) {
     width: 100%;
-    border-radius: 15px 15px 0 0;
+    border-radius: 0;
 
   }
   
@@ -1577,7 +1577,8 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     }
     @media(max-width: 700px) {
       width: 100%;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
+      margin-right: 0;
       img {
         width: 50%;
       }
@@ -1657,7 +1658,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     overflow-x: hidden;
     align-items: center;
     padding-top: 0;
-    padding: 2rem;
+    padding: 1.5rem;
     margin-bottom: 1rem;
     & > * {
     flex: 0 0 auto; 
