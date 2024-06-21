@@ -85,6 +85,7 @@ const TeamContainer = styled.div`
     width: 100%;
     height: auto;
     padding: 5rem 2rem 5rem 2rem;
+    overflow-x: hidden;
     h2 {
         color: white;
         margin: 3rem 0 3rem 0;
