@@ -1,0 +1,18 @@
+:root {
+  font-family: 'Nunito sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background: linear-gradient(135deg, rgba(123,106,207,255), rgba(178,153,204,255));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+input {
+  font-family: 'Nunito sans', sans-serif;
+}
