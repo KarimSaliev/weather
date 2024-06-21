@@ -894,7 +894,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
   }
   @media (max-width:700px) {
-    margin: 1rem;
+    margin-bottom: 2rem;
     width: 100%;
   }
  
@@ -927,6 +927,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     width: 70%;
     height: 40px;
   }
+ 
+  @media (max-width: 800px) {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
   @media (max-width: 750px) {
     span {
       font-size: 0.9em;
@@ -934,10 +939,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     p {
       font-size: 0.7em;
     }
-  }
-  @media (max-width: 800px) {
-    width: 100%;
-    border-radius: 15px 15px 0 0;
   }
   justify-content: space-between;
   p {
@@ -1258,7 +1259,6 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     overflow: hidden;
     @media(max-width: 700px) {
       width: 100%;
-      margin: 0 1rem 1rem 1rem;
     }
    
     `,iE=ue.div`
@@ -1577,7 +1577,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     }
     @media(max-width: 700px) {
       width: 100%;
-      margin: 0 1rem 1rem 1rem;
+      margin-bottom: 2rem;
       img {
         width: 50%;
       }
@@ -1656,8 +1656,8 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     overflow-y: auto;
     overflow-x: hidden;
     align-items: center;
-
     padding-top: 0;
+    padding: 2rem;
     margin-bottom: 1rem;
     & > * {
     flex: 0 0 auto; 
