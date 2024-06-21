@@ -1447,14 +1447,14 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     transition: 0.5s ease-in-out;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0.5rem;
     opacity: 0;
     ul {
       list-style: none;
       padding-left: 0;
-      width: 90%;
-      height: 90%;
+      width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -1479,8 +1479,6 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     }
     @media (max-width: 430px) {
       ul {
-        width: 100%;
-        height: 100%;
         li {
           p {
             font-size: 0.9em;
