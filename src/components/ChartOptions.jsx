@@ -120,7 +120,7 @@ const ChartOptionsContainer = styled.div`
         overflow-x: auto;
         overflow-y: hidden;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         li {
           border-radius: 10px;
           height: 75%;
