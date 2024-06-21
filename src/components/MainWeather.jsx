@@ -145,7 +145,8 @@ const MainWeatherContainer = styled.div`
     }
   }
   @media (max-width:700px) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
     width: 100%;
   }
  
@@ -182,7 +183,7 @@ const CityData = styled.div`
  
   @media (max-width: 800px) {
     width: 100%;
-    border-radius: 15px 15px 0 0;
+    border-radius: 0;
   }
   @media (max-width: 750px) {
     span {

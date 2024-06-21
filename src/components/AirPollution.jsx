@@ -66,7 +66,6 @@ const AirPollutionContainer = styled.div`
     position: relative;
     width: 30%;
     height: 100%;
-    background-color: #4a4949;
     border-radius: 30px;
     background-image: url('https://images.unsplash.com/photo-1529958986175-1cacd1317691?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWlyfGVufDB8fDB8fHww');
     background-size: cover;
@@ -106,7 +105,7 @@ const Header = styled.div`
   }
   @media (max-width: 800px) {
     width: 100%;
-    border-radius: 15px 15px 0 0;
+    border-radius: 0;
 
   }
   
