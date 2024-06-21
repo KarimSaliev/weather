@@ -69,7 +69,7 @@ const NavbarContainer = styled.div`
      position: absolute;
      width: 100px;
      object-fit: cover;
-     margin-left: 2rem;
+     left: 20px;
      &:hover {
         cursor: pointer;
 
@@ -127,10 +127,10 @@ const DropMenu = styled.div`
 
 const MenuIcon = styled.div`
     z-index: 1000%;
-    font-size: 2em;
+    font-size: 2.5em;
     position: absolute;
-    bottom: 20%;
-    right: 2%;
+    right: 20px;
+    bottom: 20px;
     opacity: 0;
     @media(max-width: 1200px) {
         opacity: 1;

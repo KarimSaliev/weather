@@ -158,7 +158,6 @@ const UpperContainer = styled.div`
   border-radius: 30px;
   margin-bottom: 1.5rem;
   padding: 1rem;
-  overflow: hidden;
   &.shut {
     opacity: 0;
   }
@@ -166,6 +165,7 @@ const UpperContainer = styled.div`
     flex-direction: column;
     overflow-y: auto;
     align-items: center;
+
     padding-top: 0;
     margin-bottom: 1rem;
     & > * {
@@ -178,6 +178,7 @@ const UpperContainer = styled.div`
 
 const MiddleContainer = styled.div`
   display: flex;
+  align-items: center;
   width: 100%;
   height: 200px;
   background: linear-gradient(rgba(68,55,119,255),rgba(97,82,151,255));

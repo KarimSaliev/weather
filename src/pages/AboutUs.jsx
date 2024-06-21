@@ -50,15 +50,15 @@ const AboutContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 100vh;
   width: 100%;
+  padding: 0 2rem 0 2rem;
   * {
     z-index: 1;
   }
-  padding: 8rem 2rem 5rem 2rem;
   h2 {
     font-size: 4em;
     color: white;
+    margin: 5rem 0 3rem 0;
   }
   h3 {
     color: white;
@@ -97,6 +97,7 @@ const AboutContainer = styled.div`
     }
   }
   @media(max-width: 400px) {
+    
     h2 {
       font-size: 2.6em;
     }
@@ -104,5 +105,6 @@ const AboutContainer = styled.div`
       font-size: 1.2em;
     }
   }
+
 
 `

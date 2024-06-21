@@ -85,13 +85,13 @@ const ChartContainer = styled.div`
   border-radius: 30px;
   margin-right: 1rem;
   padding: 1rem;
+  overflow-y: auto;
   @media(max-width: 700px) {
+    height: 500px;
     width: 100%;
     margin-right: 0;
-    height: 85%;
   }
   @media (max-width:500px) {
-    height: 80%;
     padding: 0.3rem;
-  }
-`;
+  }`
+;

@@ -42,8 +42,9 @@ const ForecastContainer = styled.div`
   align-items: center;
   width: 100%;
   overflow-x: auto;
-  justify-content: center;
+  justify-content: flex-start;
   ul {
+    height: 100%;
     display: flex;
     list-style: none;
     padding-left: 0;
@@ -124,6 +125,7 @@ const ForecastContainer = styled.div`
     }
   }
   @media (max-width: 530px) {
+
     li {
       height: 80px;
       width: 80px;

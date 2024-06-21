@@ -116,6 +116,9 @@ const SearchContainer = styled.div`
     &.active {
       transform: translateY(-44%);
     }
+    @media (max-width: 430px) {
+      width: 300px;
+    }
 
 `
 const ButtonContainer = styled.div`

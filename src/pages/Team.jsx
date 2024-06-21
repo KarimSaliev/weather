@@ -11,7 +11,7 @@ function Team() {
             observer.current = new IntersectionObserver(([entry]) => {
                 setIntersecting(entry.isIntersecting);
             }, {
-                threshold: 1.0
+                threshold: [0.0, 0.25, 0.5, 0.75, 1.0]
             });
     
             if (ref.current) {

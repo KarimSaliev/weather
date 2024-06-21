@@ -189,7 +189,7 @@ const CityData = styled.div`
   }
   @media (max-width: 800px) {
     width: 100%;
-    border-radius: 0;
+    border-radius: 15px 15px 0 0;
   }
   justify-content: space-between;
   p {
