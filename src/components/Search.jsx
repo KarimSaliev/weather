@@ -115,9 +115,18 @@ const SearchContainer = styled.div`
     }
     &.active {
       transform: translateY(-44%);
+      @media(max-width: 430px) {
+        transform: translateY(-56%);
+      }
     }
     @media (max-width: 430px) {
-      width: 300px;
+      width: 220px;
+      height: 80px;
+      transform: translateY(-156%);
+      input {
+        padding: 0.7rem;
+        border-radius: 10px;
+      }
     }
 
 `
@@ -181,6 +190,9 @@ const OptionsContainer = styled.div`
     }
     &.active {
       opacity: 1;
+    }
+    @media (max-width: 430px) {
+      padding-top: 1rem;
     }
     
 `
