@@ -91,7 +91,6 @@ const EQContainer = styled.div`
     height: 100%;
     border-radius: 30px;
     margin-right: 1rem;
-    overflow-y: auto;
     z-index: 1;
     background: linear-gradient(rgb(90, 0, 150),rgba(255, 255, 255, 0.2));
     h2 {
@@ -110,6 +109,7 @@ const EQContainer = styled.div`
       flex-direction: column;
       list-style: none;
       width:100%;
+      border-radius: 30px;
       height: 100%;
       padding: 4rem 1rem 0 1rem;
       overflow-y: auto;
@@ -218,7 +218,7 @@ const Header = styled.div`
     }
     @media (max-width: 800px) {
       width: 100%;
-      border-radius: 0;
+      border-radius: 30px 30px 0 0;
     }
    
  

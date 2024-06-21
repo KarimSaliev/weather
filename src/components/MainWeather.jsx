@@ -107,7 +107,6 @@ const MainWeatherContainer = styled.div`
   padding-left: 2rem;
   color: white;
   margin-right: 1rem;
-  overflow-y: auto;
   i {
     position: absolute;
     right: 10%;
@@ -183,7 +182,7 @@ const CityData = styled.div`
  
   @media (max-width: 800px) {
     width: 100%;
-    border-radius: 0;
+    border-radius: 30px 30px 0 0;
   }
   @media (max-width: 750px) {
     span {
