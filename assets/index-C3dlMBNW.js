@@ -856,7 +856,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   padding-left: 2rem;
   color: white;
   margin-right: 1rem;
-  overflow: hidden;
   i {
     position: absolute;
     right: 10%;
@@ -904,7 +903,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `,c7=ue.div`
   height: 50px;
   width: 210px;
-  border-radius: 0 0 30px 0;
   background-color: rgba(68,55,119,255);
   border-bottom-right-radius: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -1589,7 +1587,6 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     
     `,dE=ue.div`
     background-color: rgba(68,55,119,255);
-    border-radius: 0 0 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     width: 80%;
     height: 50px;
@@ -1661,7 +1658,6 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     align-items: center;
     justify-content: flex-start;
     padding: 1.2rem;
-    padding-top: 3rem;
     margin-bottom: 1rem;
     & > * {
     flex: 0 0 auto; 
