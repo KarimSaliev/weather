@@ -145,6 +145,7 @@ const MainWeatherContainer = styled.div`
     }
   }
   @media (max-width:700px) {
+    border: 1px solid grey;
     margin-bottom: 1.2rem;
     margin-right: 0;
     width: 100%;
