@@ -8,30 +8,30 @@ function Navbar() {
   return (
     <NavbarContainer>
         <SNavLink to='/'>
-        <img src="https://github.com/KarimSaliev/weather/blob/main/src/assets/logo.png?raw=true" alt=""onClick={()=>{setActiveNav(!activeNav)}}/>
+        <img src="https://github.com/KarimSaliev/weather/blob/main/src/assets/logo.png?raw=true" alt=""onClick={()=>{setActiveNav(false)}}/>
         </SNavLink>
        
    
         <DropMenu className={activeNav? 'active': ''}> 
         
         <SNavLink to ='/'>
-        <p onClick={()=>{setActiveNav(!activeNav)}}>
+        <p onClick={()=>{setActiveNav(false)}}>
             Home
         </p>
         </SNavLink>
        
         <SNavLink to='/aboutus'>
-        <p onClick={()=>{setActiveNav(!activeNav)}}>
+        <p onClick={()=>{setActiveNav(false)}}>
             About us
         </p>
         </SNavLink>
        <SNavLink to='/team'>
-       <p onClick={()=>{setActiveNav(!activeNav)}}>
+       <p onClick={()=>{setActiveNav(false)}}>
             Team
         </p>
         </SNavLink>
        <SNavLink to='/contact'>
-       <p onClick={()=>{setActiveNav(!activeNav)}}>
+       <p onClick={()=>{setActiveNav(false)}}>
             Contact
         </p>
         </SNavLink>
