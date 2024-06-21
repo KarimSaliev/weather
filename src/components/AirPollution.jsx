@@ -70,7 +70,7 @@ const AirPollutionContainer = styled.div`
     background-image: url('https://images.unsplash.com/photo-1529958986175-1cacd1317691?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWlyfGVufDB8fDB8fHww');
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow-y: auto;
     @media(max-width: 700px) {
       width: 100%;
       border: 1px solid grey;

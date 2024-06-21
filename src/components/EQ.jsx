@@ -91,7 +91,7 @@ const EQContainer = styled.div`
     height: 100%;
     border-radius: 30px;
     margin-right: 1rem;
-    overflow: hidden;
+    overflow-y: auto;
     z-index: 1;
     background: linear-gradient(rgb(90, 0, 150),rgba(255, 255, 255, 0.2));
     h2 {
