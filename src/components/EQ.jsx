@@ -173,7 +173,7 @@ const EQContainer = styled.div`
     }
     @media(max-width: 700px) {
       width: 100%;
-      margin: 0 1rem 1rem 1rem;
+      margin-bottom: 2rem;
       img {
         width: 50%;
       }

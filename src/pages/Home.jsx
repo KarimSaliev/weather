@@ -166,8 +166,8 @@ const UpperContainer = styled.div`
     overflow-y: auto;
     overflow-x: hidden;
     align-items: center;
-
     padding-top: 0;
+    padding: 2rem;
     margin-bottom: 1rem;
     & > * {
     flex: 0 0 auto; 

@@ -145,7 +145,7 @@ const MainWeatherContainer = styled.div`
     }
   }
   @media (max-width:700px) {
-    margin: 1rem;
+    margin-bottom: 2rem;
     width: 100%;
   }
  
@@ -179,6 +179,11 @@ const CityData = styled.div`
     width: 70%;
     height: 40px;
   }
+ 
+  @media (max-width: 800px) {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
   @media (max-width: 750px) {
     span {
       font-size: 0.9em;
@@ -186,10 +191,6 @@ const CityData = styled.div`
     p {
       font-size: 0.7em;
     }
-  }
-  @media (max-width: 800px) {
-    width: 100%;
-    border-radius: 15px 15px 0 0;
   }
   justify-content: space-between;
   p {
