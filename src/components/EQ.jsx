@@ -173,7 +173,7 @@ const EQContainer = styled.div`
     }
     @media(max-width: 700px) {
       width: 100%;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
       margin-right: 0;
       img {
         width: 50%;
@@ -194,7 +194,7 @@ const Header = styled.div`
     left: 0;
     display: flex;
     align-items: center;
-    border-bottom-right-radius: 30px;
+    border-bottom-right-radius: 15px;
     h2 {
       font-size: 1.2em;
       margin: 0.5rem 0 0.5rem 1rem;

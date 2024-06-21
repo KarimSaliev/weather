@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { WiHumidity,} from "react-icons/wi";
@@ -145,7 +145,7 @@ const MainWeatherContainer = styled.div`
     }
   }
   @media (max-width:700px) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     margin-right: 0;
     width: 100%;
   }
@@ -157,7 +157,7 @@ const CityData = styled.div`
   width: 210px;
   border-radius: 0 0 30px 0;
   background-color: rgba(68,55,119,255);
-  border-radius: 0 0 15px;
+  border-bottom-right-radius: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   color: white;
   position: absolute;
