@@ -1908,6 +1908,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
     width: 100%;
     height: auto;
     padding: 5rem 2rem 5rem 2rem;
+    overflow-x: hidden;
     h2 {
         color: white;
         margin: 3rem 0 3rem 0;
