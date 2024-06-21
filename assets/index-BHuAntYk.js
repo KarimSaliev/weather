@@ -1227,7 +1227,7 @@ return i.version="2.30.1",r(be),i.fn=N,i.min=Jw,i.max=e_,i.now=t_,i.utc=_,i.unix
         overflow-x: auto;
         overflow-y: hidden;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         li {
           border-radius: 10px;
           height: 75%;
