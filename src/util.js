@@ -204,7 +204,8 @@ export const organizeForecast = (forecast_hourly, hourly_units, cityName, curren
             visibility: forecast_hourly.visibility[index],
             wind_direction_10m: forecast_hourly.wind_direction_10m[index],
             wind_speed_10m: forecast_hourly.wind_speed_10m[index],
-            wind_gusts_10m: forecast_hourly.wind_gusts_10m[index]
+            wind_gusts_10m: forecast_hourly.wind_gusts_10m[index],
+            tempF: forecast_hourly.tempF[index]
           };
           const is_day = forecast_hourly.is_day[index];
           const description = getDescription(forecast_hourly.weather_code[index]);
@@ -461,4 +462,15 @@ export const getTeamText = (person)=>{
     'khushnud': 'Khushnud',
   }
   return texts[person];
+}
+
+export const addFahr = (data)=>{
+  console.log(data);
+  const tempF = (data.current.temperature_2m*9/5)+32
+  const fUnit = '°F';
+  data.current.tempF = tempF;
+  data.current_units.fUnit = fUnit;
+  data.hourly.tempF = data.hourly.temperature_2m.map(item=>(item*9/5)+32)
+  data.hourly_units.fUnit = fUnit;
+  return data;
 }

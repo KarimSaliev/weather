@@ -10,6 +10,7 @@ import Search from '../components/Search'
 import { convertToDate, setParams, getDescription, getIcon, organizeForecast} from '../util'
 import EQ from '../components/EQ'
 import { organizeChartData } from '../util'
+import { addFahr } from '../util'
 function Home() {
   const apiKey = '84429d8bd53868d74b82e32554f8ba8f'
   const [geoLocation, setGeolocation]= useState(null);
@@ -63,6 +64,7 @@ function Home() {
         throw new Error(response);
       }
       const data = await response.json();
+      addFahr(data);
       const description = getDescription(data.current.weather_code)
       const icon = getIcon(description, data.current.is_day)
       const date = convertToDate(data);

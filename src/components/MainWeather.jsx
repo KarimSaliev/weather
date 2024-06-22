@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef, useEffect, useState}from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { WiHumidity,} from "react-icons/wi";
@@ -7,8 +7,20 @@ import { BsSpeedometer, BsFillCloudSnowFill} from "react-icons/bs";
 import { FaWater, FaCompass } from "react-icons/fa";
 import { FiWind } from "react-icons/fi";
 import { IoRainy } from "react-icons/io5";
+import Typed from 'typed.js'
 function MainWeather({currentWeather}) {
-  
+  const fahr_option = useRef(null);
+  const [tempKind, setTempKind] = useState(false);
+  useEffect(()=>{
+    const fahrTyped = new Typed(fahr_option.current, {
+      strings: !tempKind? ['View in Fahrenheit']: ['View in Celcius'],
+      typeSpeed: 50,
+      cursorChar: '',
+    });
+    return () => {
+      fahrTyped.destroy();
+    };
+  },[tempKind])
   return(
 
   
@@ -25,7 +37,14 @@ function MainWeather({currentWeather}) {
         <span>{currentWeather.name}, {currentWeather.country}</span>
         <p>{currentWeather.date.format('D')} {currentWeather.date.format('MMMM')}, {currentWeather.date.year()}</p>
       </CityData>
-      <h2> {currentWeather.data.temperature_2m} {currentWeather.units.temperature_2m}</h2>
+      <p ref={fahr_option} onClick ={()=>{setTempKind(!tempKind)}}></p>
+      {!tempKind&&(
+         <h2> {currentWeather.data.temperature_2m} {currentWeather.units.temperature_2m}</h2>
+      )}
+      {tempKind&&(
+         <h2> {currentWeather.data.tempF} {currentWeather.units.fUnit}</h2>
+      )}
+     
       <h3>{currentWeather.description}, {currentWeather.data.is_day===1? 'Day':'Night'}</h3>
       <h3>{currentWeather.date.format('dddd')}</h3>
       <AddInfoContainer>
@@ -107,6 +126,12 @@ const MainWeatherContainer = styled.div`
   padding-left: 2rem;
   color: white;
   margin-right: 1rem;
+  p {
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
   i {
     position: absolute;
     right: 10%;
