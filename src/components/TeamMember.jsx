@@ -44,6 +44,18 @@ const TeamMemberContainer = styled.div`
     align-items: center;
     h4 {
         width: 40%;
+        color: white;
+        font-weight: 100;
+        overflow-x: auto;
+        &.active {
+            color: black;
+        }
+        @media (max-width: 500px) {
+            font-size: 0.8em;
+        }
+        @media (max-width: 400px) {
+            font-size: 0.6em;
+        }
     }
     &.active {
         background-color: white;
@@ -66,20 +78,7 @@ const TeamMemberContainer = styled.div`
             height: 50%;
         }
     }
-    h4 {
-        color: white;
-        font-weight: 100;
-        &.active {
-            color: black;
-        }
-        @media (max-width: 500px) {
-            font-size: 0.8em;
-        }
-        @media (max-width: 400px) {
-            font-size: 0.6em;
-        }
-
-    }
+   
     @media (max-width: 1000px) {
         width: 60%;
         margin-bottom: 1rem;

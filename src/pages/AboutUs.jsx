@@ -1,14 +1,16 @@
 import React, {useRef, useEffect, useState} from 'react'
 import styled from 'styled-components'
 import Typed from 'typed.js'
+import { useNavigate } from 'react-router-dom';
 function AboutUs() {
   const [active, setActive] = useState(false);
   const header = useRef(null);
   const description  = useRef(null);
+  const navigate = useNavigate();
   useEffect(()=>{
     const headerTyped = new Typed(header.current, {
       strings: ['About us'],
-      typeSpeed: 10,
+      typeSpeed: 50,
       cursorChar: '',
       onComplete: () => {
         if (description.current) {
@@ -36,9 +38,9 @@ function AboutUs() {
     <AboutContainer>
       <h2 ref={header}></h2>
       <h3 ref={description}></h3>
-      <h4 className={active? 'active': ''} style={{transition: '1s ease-in-out'}}> Team of 6 developers inviting you to test our recent weather application that runs both on mobile and web platforms. Each of us contributed a considerable part in creating this project starting from management, design, and ending with building this application. You can familiarize yourself more with out team by clicking this link.</h4>
+      <h4 className={active? 'active': ''} style={{transition: '1s ease-in-out'}}> Team of 6 developers inviting you to test our recent weather application that runs both on mobile and web platforms. Each of us contributed a considerable part in creating this project starting from management, design, and ending with building this application. You can familiarize yourself more with out team by clicking this <span onClick={()=>navigate('/team')}>link</span>.</h4>
       <h4 className={active? 'active': ''}style={{transition: '2s ease-in-out'}}> We all contributed greatly to this project and hope you can enjoy your experience.</h4>
-      <h4 className={active? 'active': ''}style={{transition: '3s ease-in-out'}}> You can also contact our team by either clicking this link, or navigating to Contact page.</h4>
+      <h4 className={active? 'active': ''}style={{transition: '3s ease-in-out'}}> You can also contact our team by either clicking this<span onClick={()=>navigate('/contact')}> link</span> or navigating to Contact page.</h4>
     </AboutContainer>
   )
 }
@@ -54,6 +56,12 @@ const AboutContainer = styled.div`
   padding: 0 2rem 0 2rem;
   * {
     z-index: 1;
+  }
+  span {
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
   h2 {
     font-size: 4em;

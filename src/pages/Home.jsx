@@ -34,7 +34,7 @@ function Home() {
     setGeolocation([lat, long])
   }
   const error=(e)=>{
-    //window.alert('There was a problem geolocating your device');
+    window.alert('There was a problem geolocating your device');
     setLoadingScreen(false);
     throw new Error(e);
     

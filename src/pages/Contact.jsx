@@ -16,7 +16,7 @@ function Contact() {
         setActive(true);
         const headerTyped = new Typed(headerRef.current, {
           strings: ['Here you can contact our team'],
-          typeSpeed: 10,
+          typeSpeed: 50,
           cursorChar: '',
         });
         return () => {

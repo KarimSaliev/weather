@@ -454,12 +454,10 @@ export const capitalizeInput = (string)=>{
 
 export const getTeamText = (person)=>{
   const texts = {
-    'Karim Saliev': 'Karim Saliev etc etc etc',
-    'Nazar Zhanabergenov': 'Nazar Zhanabergenov etc',
-    'Kateryna Sadovska': 'Kateryna Sadovska etc etc',
-    'Ravshanbek Musaev': 'Ravshanbek Musaev etc etc',
-    'ebube': 'Ebube',
-    'khushnud': 'Khushnud',
+    'Karim Saliev': 'Karim Saliev 840820235, karim.saliev@ue-germany.de',
+    'Nazar Zhanabergenov': 'Nazar Zhanabergenov 40231090, nazar.zhanabergenov@ue-germany.de',
+    'Kateryna Sadovska': 'Kateryna Sadovska 67155040, kateryna.sadovska@ue-germany.de',
+    'Ravshanbek Musaev': 'Ravshanbek Musaev 32034926, ravshanbek.musaev@ue-germany.de'
   }
   return texts[person];
 }

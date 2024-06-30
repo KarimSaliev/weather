@@ -32,8 +32,6 @@ function Team() {
     const isInViewPort1 = useOnScreen(row1);
     const row2= useRef(null);
     const isInViewPort2 = useOnScreen(row2);
-    const row3= useRef(null);
-    const isInViewPort3 = useOnScreen(row3);
     const header = useRef(null);
     useEffect(()=>{
         const headerTyped = new Typed(header.current, {
@@ -61,13 +59,6 @@ function Team() {
             <TeamMember pos = {'left'} inViewPort={isInViewPort2} img={'https://github.com/KarimSaliev/weather/blob/main/src/assets/ravshan.png?raw=true'} person='Ravshanbek Musaev'/>
             
             <TeamMember pos = {'right'} inViewPort={isInViewPort2} img={'https://github.com/KarimSaliev/weather/blob/main/src/assets/kateryna.png?raw=true'} person='Kateryna Sadovska'/>
-            
-        </Row>
-        <Row ref={row3}>
-            
-            <TeamMember pos = {'left'} inViewPort={isInViewPort3} img={'src/assets/ebube.png'} person='ebube'/>
-            
-            <TeamMember pos = {'right'} inViewPort={isInViewPort3} img={'/src/assets/khushnud.png'} person='khushnud'/>
             
         </Row>
       
