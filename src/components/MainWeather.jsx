@@ -12,14 +12,18 @@ function MainWeather({currentWeather}) {
   const fahr_option = useRef(null);
   const [tempKind, setTempKind] = useState(false);
   useEffect(()=>{
-    const fahrTyped = new Typed(fahr_option.current, {
-      strings: !tempKind? ['View in Fahrenheit']: ['View in Celcius'],
-      typeSpeed: 50,
-      cursorChar: '',
-    });
-    return () => {
-      fahrTyped.destroy();
-    };
+    if (fahr_option.current) {
+      const fahrTyped = new Typed(fahr_option.current, {
+        strings: !tempKind? ['View in Fahrenheit']: ['View in Celcius'],
+        typeSpeed: 50,
+        cursorChar: '',
+      });
+
+      return () => {
+        fahrTyped.destroy();
+      };
+    }
+    
   },[tempKind])
   return(
 
